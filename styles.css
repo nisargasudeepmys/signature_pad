@@ -1,0 +1,62 @@
+body
+{
+  font-family: sans-serif;
+  text-align: center;
+  margin: 5rem;
+  
+}
+
+h1
+{
+    font-size: 3rem;
+    border: 3px solid black;
+}
+.container
+{
+    font-size: 1.75rem;
+    display: grid;
+    height: 70vh;
+    grid-template-rows:repeat(6 , 1fr) ;
+    grid-template-columns: repeat(2 , 1fr) ;
+    gap: 10px;
+    
+}
+
+.container > *
+{
+    border: 3px solid black;
+}
+
+#drawing-board
+{
+    grid-area: 2/1/6/3;
+}
+
+
+canvas
+{
+    width: 100%;
+    height: 100%;
+}
+
+form{
+    width: 100%;
+    height: 100%;
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input
+{
+    display: block;
+    width: 100%;
+    height: 50%;
+
+}
+
+#line-width
+{
+    width: 99%;
+}

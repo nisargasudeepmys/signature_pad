@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Signature Pad</title>
+</head>
+<body>
+    <h1>Signature Pad</h1>
+    <div class="container" id = "toolbar">
+        <div id="tool1" class="tools">
+            <form action="">
+                <label for="stroke">Colour</label>              <!--'for' denotes the id the label it is associated with--> 
+                <input id="stroke" name="stroke" type="color"> <!--//identify input value-->
+            </form>
+        </div>
+        <div id="tool2" class="tools">
+            <form action="">
+                <label for="line-width">Line Width</label>
+                <input id="line-width" name="line-width" type="number">
+            </form>
+        </div>
+        <div id="drawing-board">
+            <canvas id="canvas">
+
+            </canvas>
+        </div>
+        <div id="tool3" class="tools">
+            <button id="clear">Clear</button>
+        </div>
+        <div id="tool4" class="tools">
+            <form action="">
+                <button id="save">Save As</button>
+                <select id="format">
+                    <option value="pdf">pdf</option>
+                    <option value="jpeg">jpeg</option>
+                </select>
+            </form>
+        </div>
+    </div>
+    <script src = "./index.js"></script>
+</body>
+</html>
